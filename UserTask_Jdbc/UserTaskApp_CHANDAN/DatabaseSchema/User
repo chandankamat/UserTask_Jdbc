@@ -1,0 +1,11 @@
+CREATE TABLE `user` (
+  `UID` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `mob` varchar(45) NOT NULL,
+  PRIMARY KEY (`UID`),
+  UNIQUE KEY `email_UNIQUE` (`email`),
+  UNIQUE KEY `mob_UNIQUE` (`mob`),
+  UNIQUE KEY `UID_UNIQUE` (`UID`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

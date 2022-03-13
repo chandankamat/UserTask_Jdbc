@@ -1,0 +1,13 @@
+CREATE TABLE `task` (
+  `TID` int NOT NULL AUTO_INCREMENT,
+  `Taskname` varchar(45) NOT NULL,
+  `Description` varchar(250) DEFAULT NULL,
+  `Status` varchar(45) NOT NULL,
+  `Start_Date` varchar(45) NOT NULL,
+  `End_Date` varchar(45) NOT NULL,
+  `UID` int NOT NULL,
+  PRIMARY KEY (`TID`),
+  UNIQUE KEY `TID_UNIQUE` (`TID`),
+  KEY `UID_idx` (`UID`),
+  CONSTRAINT `UID` FOREIGN KEY (`UID`) REFERENCES `user` (`UID`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
