@@ -9,7 +9,7 @@ import com.app.entities.Task;
 
 public class TaskDatabase extends DatabaseUtils implements Database {
 	private	String insertQuery      ="insert into usersdb.task values(0,?,?,?,?,?,?);";
-    private String updateQuery      ="update usersdb.task set Status = ? where Status = ? ;";
+        private String updateQuery      ="update usersdb.task set Status = ? where Status = ? ;";
 	private String deleteQuery      ="delete from usersdb.task where Taskname = ?;";
 	private String selectOneQuery   ="select * from usersdb.task where tid= ?;";
 	private String selectManyQuery  ="select * from usersdb.task where UID= ?;";;
